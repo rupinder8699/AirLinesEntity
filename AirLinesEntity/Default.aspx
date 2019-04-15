@@ -14,7 +14,7 @@
             <h2>Welcome</h2>
             <p>
               Welcome aboard NZ Airways, New Zealand's premier international airline which provides you with one of the finest experiences across the skies. Our high standards of service and reliability, efficient operations and focus on innovation has enabled us become one of NZ's favourite domestic and international airline.
-                Best in class airlines come with best Facitlities for Differrent categories of People For exmaple Bussiness Class 
+                Best in class airlines come with best Facitlities for Differrent categories of People for exmaple Bussiness Class 
                 for People looking for some Premiem rich class feel around their travelling.
             </p>
            
