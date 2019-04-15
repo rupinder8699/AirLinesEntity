@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirLinesEntity", "AirLinesEntity\AirLinesEntity.csproj", "{CD91C74F-BE4A-4A6C-8B84-C2F0B21B4ED6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Database.csproj", "{767B7FBC-0F53-4365-A07D-62E69BD8151C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD91C74F-BE4A-4A6C-8B84-C2F0B21B4ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD91C74F-BE4A-4A6C-8B84-C2F0B21B4ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD91C74F-BE4A-4A6C-8B84-C2F0B21B4ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD91C74F-BE4A-4A6C-8B84-C2F0B21B4ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{767B7FBC-0F53-4365-A07D-62E69BD8151C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{767B7FBC-0F53-4365-A07D-62E69BD8151C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{767B7FBC-0F53-4365-A07D-62E69BD8151C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{767B7FBC-0F53-4365-A07D-62E69BD8151C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2090757-84B5-475B-9F2A-B322C17269A7}
+	EndGlobalSection
+EndGlobal
