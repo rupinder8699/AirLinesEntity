@@ -41,9 +41,15 @@
     
     <div class="col-md-12" id="PlaneRecord" runat="server">
 
-        
+                    <a href="DashBoard.aspx" class="btn btn-primary">Back to Main</a>
 
+        <br />
+            <br />
+        <br />
     </div>
     
-
+    
+    
+    
+    
 </asp:Content>

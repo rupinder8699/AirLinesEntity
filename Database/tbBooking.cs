@@ -24,7 +24,5 @@ namespace Database
         public Nullable<int> Tickets { get; set; }
         public string Sdate { get; set; }
         public Nullable<int> TotalPrice { get; set; }
-    
-        public virtual tbPlane tbPlane { get; set; }
     }
 }

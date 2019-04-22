@@ -49,10 +49,18 @@
                 <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="btn btn-warning" OnClick="btnSubmit_Click" />
           
 
-    
+    <br />
+            <br />
+          
         
         </div>
     
+      <br />
+    <br />
+<br />
+            <br />  <a href="DashBoard.aspx" class="btn btn-primary">Back to Main</a>
+            <br />
+
 
 
 </asp:Content>

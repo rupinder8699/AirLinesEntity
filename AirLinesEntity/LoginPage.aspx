@@ -27,12 +27,15 @@
             </div>
 
                 <asp:Button ID="btnSubmit" runat="server" Text="Login" class="btn btn-warning" OnClick="btnSubmit_Click" />
-          
-
-    
+                <a href="Default.aspx" class="btn btn-primary">Back to Main</a>
+    <br />
+    <br />
+<br />
+            <br />
+            <br/>
+      
         
         </div>
-    
 
 
 

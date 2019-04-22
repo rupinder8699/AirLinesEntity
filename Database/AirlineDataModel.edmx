@@ -64,7 +64,6 @@
           <Property Name="Tickets" Type="Int32" />
           <Property Name="Sdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="TotalPrice" Type="Int32" />
-          <NavigationProperty Name="tbPlane" Relationship="DbAirlineModel.tbPlanetbBooking" FromRole="tbBooking" ToRole="tbPlane" />
         </EntityType>
         <EntityType Name="tbContact">
           <Key>
@@ -85,21 +84,12 @@
           <Property Name="Arrival" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="destination" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="Price" Type="Int32" />
-          <NavigationProperty Name="tbBookings" Relationship="DbAirlineModel.tbPlanetbBooking" FromRole="tbPlane" ToRole="tbBooking" />
         </EntityType>
         <EntityContainer Name="DbAirlineEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tbBookings" EntityType="Self.tbBooking" />
           <EntitySet Name="tbContacts" EntityType="Self.tbContact" />
           <EntitySet Name="tbPlanes" EntityType="Self.tbPlane" />
-          <AssociationSet Name="tbPlanetbBooking" Association="DbAirlineModel.tbPlanetbBooking">
-            <End Role="tbPlane" EntitySet="tbPlanes" />
-            <End Role="tbBooking" EntitySet="tbBookings" />
-          </AssociationSet>
         </EntityContainer>
-        <Association Name="tbPlanetbBooking">
-          <End Type="DbAirlineModel.tbPlane" Role="tbPlane" Multiplicity="1" />
-          <End Type="DbAirlineModel.tbBooking" Role="tbBooking" Multiplicity="*" />
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

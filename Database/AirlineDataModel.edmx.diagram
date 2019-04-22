@@ -8,14 +8,6 @@
         <EntityTypeShape EntityType="DbAirlineModel.tbBooking" Width="2.125" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAirlineModel.tbContact" Width="1.5" PointX="7.125" PointY="2" IsExpanded="true" />
         <EntityTypeShape EntityType="DbAirlineModel.tbPlane" Width="1.5" PointX="4.875" PointY="0.75" IsExpanded="true" />
-        <AssociationConnector Association="DbAirlineModel.tbPlanetbBooking" ManuallyRouted="true" >
-          <ConnectorPoint PointX="4.875" PointY="1.9324446614583339" />
-          <ConnectorPoint PointX="4.215" PointY="1.9324446614583339" />
-          <ConnectorPoint PointX="4.215" PointY="1.8178613281250007" />
-          <ConnectorPoint PointX="3.535" PointY="1.8178613281250007" />
-          <ConnectorPoint PointX="3.535" PointY="1.9324446614583339" />
-          <ConnectorPoint PointX="2.875" PointY="1.9324446614583339" />
-        </AssociationConnector>
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

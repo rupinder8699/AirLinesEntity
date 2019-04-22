@@ -11,16 +11,29 @@
     
 <div class="row">
         <div class="col-md-12">
-            <h2>Welcome</h2>
-            <p>
-              Welcome aboard NZ Airways, New Zealand's premier international airline which provides you with one of the finest experiences across the skies. Our high standards of service and reliability, efficient operations and focus on innovation has enabled us become one of NZ's favourite domestic and international airline.
-                Best in class airlines come with best Facitlities for Differrent categories of people for exmaple Bussiness Class 
-                for People looking for some Premiem rich class feel around their travelling.
-            </p>
+            <h2>Wel Come to the NZ Air ways </h2>
            
+            <p>
+                
+  Are you always putting off travel plans just because the prices of flight tickets are out of your budget? Are your savings never enough for trip you have been longing for? HappyEasyGo is here to put an end to that. No more spending hours on the internet looking for the best flight offers and being left disappointed at the end. With HappyEasyGo, you will have no disappointments and only happy travels.
+
+Fly to Bangalore, Mumbai, New Delhi, Goa, Andaman, Kerala or any other domestic destination of your choice. HappyEasyGo has your back with the best online flight ticket booking rates. Explore the bustling New York City, fly off to London for a family vacation, enjoy a romantic escapade in Bali or go to Australia with your squad. HappyEasyGo will help you save money on your flight ticket booking. Also, save money on your business trips with HappyEasyGo’s air ticket booking offers.
+
+HappyEasyGo is always striving to provide you with a hassle-free flight booking experience and that shows in everything we do. The best flight offers and deals are now at your fingertips. Sign up today for registration reward and access to exclusive discounts for registered users. Book cheap flights with HappyEasyGo today.
+    
+            </p>
         </div>
-       
+    <div class="col-md-6">
+        <img src="img/Booking.jpg"class="thumbnail" />
+
+
+    </div>
+       <div class="col-md-6">
+           <img class="thumbnail" src="img/search.jpg">
+
+       </div>
       
+    <%--  --%>
 
     </div>
 

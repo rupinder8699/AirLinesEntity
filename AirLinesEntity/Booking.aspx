@@ -68,8 +68,14 @@
 
           <asp:Button ID="btnSubmit" runat="server" Text="Book" class="btn btn-warning" OnClick="btnSubmit_Click" />
           
-
+            
+    <br />
+            <br />
+            <a href="DashBoard.aspx" class="btn btn-primary">Back to Main</a>
     
+      <br />
+    <br />
+<br />
         
         </div>
     

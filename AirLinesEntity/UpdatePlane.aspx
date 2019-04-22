@@ -224,11 +224,20 @@
     
     <div class="col-md-12" id="PlaneRecord" runat="server">
 
-        
+                  
+          <br />
+    <br />
+<br />
+            <br />
+            <br />
 
     </div>
     
-
+    
+    <br /><a href="DashBoard.aspx" class="btn btn-primary">Back to Main</a>
+            <br />
+  
+    
 
 
 </asp:Content>

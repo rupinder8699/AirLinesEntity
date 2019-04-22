@@ -14,20 +14,11 @@ namespace Database
     
     public partial class tbPlane
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public tbPlane()
-        {
-            this.tbBookings = new HashSet<tbBooking>();
-        }
-    
         public int ID { get; set; }
         public Nullable<int> PlaneNo { get; set; }
         public string PlaneName { get; set; }
         public string Arrival { get; set; }
         public string destination { get; set; }
         public Nullable<int> Price { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<tbBooking> tbBookings { get; set; }
     }
 }
