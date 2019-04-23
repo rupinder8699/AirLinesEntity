@@ -17,14 +17,14 @@ namespace AirLinesEntity
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            String Data = "<table><tr><td>Plane No</td><td>Plane Name</td><td>Arrival</td><td>Destination</td><td>Price </td><td>Booking</td></tr>";
+            String Data = "<table><tr><td>Plane No</td><td>Plane Name</td><td>Departure</td><td>Destination</td><td>Price </td><td>Booking</td></tr>";
             DataTable tbRecord = new DataTable();
             Database.frmLogin obj = new Database.frmLogin();
-            tbRecord = obj.ViewSearchPlane(Depature.Text.ToString(), destination.Text.ToString());
+            tbRecord = obj.ViewSearchPlane(Departure.Text.ToString(), Destination.Text.ToString());
             if (tbRecord.Rows.Count > 0)
             {
                 for (int x=0;x<tbRecord.Rows.Count;x++) {
-                    Data = Data + "<tr><td>"+tbRecord.Rows[x]["PlaneNo"]+ "</td><td>" + tbRecord.Rows[x]["PlaneName"] + "</td><td>" + tbRecord.Rows[x]["Arrival"] + "</td><td>" + tbRecord.Rows[x]["destination"] + "</td><td>" + tbRecord.Rows[x]["Price"] + "</td><td><a href='Booking.aspx?id="+tbRecord.Rows[x]["id"]+"' class='btn btn-primary'>Booking</a></td></tr>";
+                    Data = Data + "<tr><td>"+tbRecord.Rows[x]["PlaneNo"]+ "</td><td>" + tbRecord.Rows[x]["PlaneName"] + "</td><td>" + tbRecord.Rows[x]["Departure"] + "</td><td>" + tbRecord.Rows[x]["Destination"] + "</td><td>" + tbRecord.Rows[x]["Price"] + "</td><td><a href='Booking.aspx?id="+tbRecord.Rows[x]["id"]+"' class='btn btn-primary'>Booking</a></td></tr>";
                 }
 
                 PlaneRecord.InnerHtml = Data;

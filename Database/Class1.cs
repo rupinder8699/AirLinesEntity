@@ -77,23 +77,23 @@ namespace Database
         // this bloack is used to add the record of the Plane
         public int PlanenNo { get; set; }
         public String PlaneName { get; set; }
-        public String Arrival { get; set; }
-        public String destination { get; set; }
+        public String Departure { get; set; }
+        public String Destination { get; set; }
         public int Price { get; set; }
 
         // add the Plane to the Record
-        public Boolean addPlane(int PlaneNo,String PlaneName,String Arrival, String destination, int Price) {
-            String Qry = "insert into tbPlane(PlaneNo,PlaneName,Arrival,destination,Price) values(" + PlaneNo+",'"+PlaneName+"','"+ Arrival + "','"+destination+"',"+Price+")";
+        public Boolean addPlane(int PlaneNo,String PlaneName,String Departure, String Destination, int Price) {
+            String Qry = "insert into tbPlane(PlaneNo,PlaneName,Departure,Destination,Price) values(" + PlaneNo+",'"+PlaneName+"','"+ Departure + "','"+Destination+"',"+Price+")";
             InsDelUpdt(Qry);
             return true;
         }
 
         // view the plane according to the searching from destination  
-        public DataTable ViewSearchPlane(String departure,String destination) {
+        public DataTable ViewSearchPlane(String Departure, String Destination) {
 
             DataTable tbRecord = new DataTable();
                 
-            tbRecord=Srch("select * from tbPlane where Arrival='"+departure+"' and destination='"+destination+"'");
+            tbRecord=Srch("select * from tbPlane where Departure='" + Departure+"' and Destination='"+Destination+"'");
 
             return tbRecord;
 
@@ -113,9 +113,9 @@ namespace Database
         }
 
         // this method id used to store the booking record in the table 
-        public int Booking(int PlaneNo, String PlaneName, String Arrival, String destination, int Price,String CustName,int Tickets,String Sdate,int Totprice)
+        public int Booking(int PlaneNo, String PlaneName, String Departure, String Destination, int Price,String CustName,int Tickets,String Sdate,int Totprice)
         {
-            String Qry = "insert into tbBooking(PlaneNo,PlaneName,Arrival,destination,Price,CustomerName,Tickets,Sdate,TotalPrice) values(" + PlaneNo + ",'" + PlaneName + "','" + Arrival + "','" + destination + "'," + Price + ",'"+CustName+"',"+Tickets+",'"+Sdate+"',"+Totprice+")";
+            String Qry = "insert into tbBooking(PlaneNo,PlaneName,Departure,Destination,Price,CustomerName,Tickets,Sdate,TotalPrice) values(" + PlaneNo + ",'" + PlaneName + "','" + Departure + "','" + Destination + "'," + Price + ",'"+CustName+"',"+Tickets+",'"+Sdate+"',"+Totprice+")";
             InsDelUpdt(Qry);
 
             Qry = "";

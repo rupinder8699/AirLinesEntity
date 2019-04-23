@@ -26,7 +26,7 @@ namespace AirLinesEntity
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            String Data = "<table><tr><td>Plane No</td><td>Plane Name</td><td>Arrival</td><td>Destination</td><td>Price </td><td>Customer Name</td><td>No of Ticket</td><td>Date</td><td>Total Price</td><td>Cancel</td></tr>";
+            String Data = "<table><tr><td>Plane No</td><td>Plane Name</td><td>Departure</td><td>Destination</td><td>Price </td><td>Customer Name</td><td>No of Ticket</td><td>Date</td><td>Total Price</td><td>Cancel</td></tr>";
             DataTable tbRecord = new DataTable();
             
 
@@ -35,7 +35,7 @@ namespace AirLinesEntity
             {
                 for (int x = 0; x < tbRecord.Rows.Count; x++)
                 {
-                    Data = Data + "<tr><td>" + tbRecord.Rows[x]["PlaneNo"] + "</td><td>" + tbRecord.Rows[x]["PlaneName"] + "</td><td>" + tbRecord.Rows[x]["Arrival"] + "</td><td>" + tbRecord.Rows[x]["destination"] + "</td><td>" + tbRecord.Rows[x]["Price"] + "</td><td>" + tbRecord.Rows[x]["CustomerName"] + "</td><td>" + tbRecord.Rows[x]["Tickets"] + "</td><td>" + tbRecord.Rows[x]["Sdate"] + "</td><td>" + tbRecord.Rows[x]["TotalPrice"] + "</td><td><a href='CancelTicket.aspx?id=" + tbRecord.Rows[x]["id"] + "' class='btn btn-primary'>Cancel</a></td></tr>";
+                    Data = Data + "<tr><td>" + tbRecord.Rows[x]["PlaneNo"] + "</td><td>" + tbRecord.Rows[x]["PlaneName"] + "</td><td>" + tbRecord.Rows[x]["Departure"] + "</td><td>" + tbRecord.Rows[x]["Destination"] + "</td><td>" + tbRecord.Rows[x]["Price"] + "</td><td>" + tbRecord.Rows[x]["CustomerName"] + "</td><td>" + tbRecord.Rows[x]["Tickets"] + "</td><td>" + tbRecord.Rows[x]["Sdate"] + "</td><td>" + tbRecord.Rows[x]["TotalPrice"] + "</td><td><a href='CancelTicket.aspx?id=" + tbRecord.Rows[x]["id"] + "' class='btn btn-primary'>Cancel</a></td></tr>";
                 }
 
                 PlaneRecord.InnerHtml = Data;

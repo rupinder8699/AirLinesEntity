@@ -20,8 +20,8 @@ namespace AirLinesEntity
                 if (tbl.Rows.Count>0) {
                     PlaneNo.Text = tbl.Rows[0]["PlaneNo"].ToString();
                     PlaneName.Text= tbl.Rows[0]["PlaneName"].ToString();
-                    Depature.Text= tbl.Rows[0]["Arrival"].ToString();
-                    destination.Text= tbl.Rows[0]["destination"].ToString();
+                    Departure.Text= tbl.Rows[0]["Departure"].ToString();
+                    Destination.Text= tbl.Rows[0]["Destination"].ToString();
                     Price.Text= tbl.Rows[0]["Price"].ToString();
 
 
@@ -39,9 +39,9 @@ namespace AirLinesEntity
 
             int total = Convert.ToInt32(Price.Text.ToString()) * Convert.ToInt32(Tickets.Text.ToString());
 
-            int y=obj.Booking(Convert.ToInt32(PlaneNo.Text.ToString()), PlaneName.Text.ToString(), Depature.Text.ToString(), destination.Text.ToString(), Convert.ToInt32(Price.Text.ToString()), CustomerName.Text.ToString(), Convert.ToInt32(Tickets.Text.ToString()),Sdate.Text.ToString(),total);
+            int y=obj.Booking(Convert.ToInt32(PlaneNo.Text.ToString()), PlaneName.Text.ToString(), Departure.Text.ToString(), Destination.Text.ToString(), Convert.ToInt32(Price.Text.ToString()), CustomerName.Text.ToString(), Convert.ToInt32(Tickets.Text.ToString()),Sdate.Text.ToString(),total);
 
-            rslt.InnerHtml = "Ticket No is===" + y;
+            rslt.InnerHtml = "Ticket No is = " + y;
 
         }
     }

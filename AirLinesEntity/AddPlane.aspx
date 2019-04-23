@@ -29,13 +29,13 @@
             </div>
 
             <div class="form-group">
-                <label for="pwd">Depature</label>
-                <asp:TextBox ID="Depature" Name="Arrival" runat="server" class="form-control"></asp:TextBox>
+                <label for="pwd">Departure</label>
+                <asp:TextBox ID="Departure" Name="Departure" runat="server" class="form-control"></asp:TextBox>
             </div>
 
             <div class="form-group">
                 <label for="pwd">Destination</label>
-                <asp:TextBox ID="destination" Name="destination" runat="server" class="form-control"></asp:TextBox>
+                <asp:TextBox ID="Destination" Name="Destination" runat="server" class="form-control"></asp:TextBox>
             </div>
 
 

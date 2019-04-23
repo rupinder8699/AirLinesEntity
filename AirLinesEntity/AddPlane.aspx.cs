@@ -19,7 +19,7 @@ namespace AirLinesEntity
 
             Database.frmLogin obj = new Database.frmLogin();
             
-            if (obj.addPlane(Convert.ToInt32(PlaneNo.Text.ToString()), PlaneName.Text.ToString(), Depature.Text.ToString(), destination.Text.ToString(), Convert.ToInt32(Price.Text.ToString()))) {
+            if (obj.addPlane(Convert.ToInt32(PlaneNo.Text.ToString()), PlaneName.Text.ToString(), Departure.Text.ToString(), Destination.Text.ToString(), Convert.ToInt32(Price.Text.ToString()))) {
                 rslt.InnerHtml = "Record Saved";
 
             }else{
@@ -29,8 +29,8 @@ namespace AirLinesEntity
 
             PlaneNo.Text = "";
             PlaneName.Text = "";
-            destination.Text = "";
-            Depature.Text = "";
+            Destination.Text = "";
+            Departure.Text = "";
             Price.Text = "";
         }
     }

@@ -44,10 +44,10 @@
                             <asp:Label ID="PlaneNameLabel" runat="server" Text='<%# Eval("PlaneName") %>' />
                         </td>
                         <td>
-                            <asp:Label ID="ArrivalLabel" runat="server" Text='<%# Eval("Arrival") %>' />
+                            <asp:Label ID="DepartureLabel" runat="server" Text='<%# Eval("Departure") %>' />
                         </td>
                         <td>
-                            <asp:Label ID="destinationLabel" runat="server" Text='<%# Eval("destination") %>' />
+                            <asp:Label ID="DestinationLabel" runat="server" Text='<%# Eval("Destination") %>' />
                         </td>
                         <td>
                             <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
@@ -70,10 +70,10 @@
                             <asp:TextBox ID="PlaneNameTextBox" runat="server" Text='<%# Bind("PlaneName") %>' />
                         </td>
                         <td>
-                            <asp:TextBox ID="ArrivalTextBox" runat="server" Text='<%# Bind("Arrival") %>' />
+                            <asp:TextBox ID="DepartureTextBox" runat="server" Text='<%# Bind("Departure") %>' />
                         </td>
                         <td>
-                            <asp:TextBox ID="destinationTextBox" runat="server" Text='<%# Bind("destination") %>' />
+                            <asp:TextBox ID="DestinationTextBox" runat="server" Text='<%# Bind("Destination") %>' />
                         </td>
                         <td>
                             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
@@ -101,10 +101,10 @@
                             <asp:TextBox ID="PlaneNameTextBox" runat="server" Text='<%# Bind("PlaneName") %>' />
                         </td>
                         <td>
-                            <asp:TextBox ID="ArrivalTextBox" runat="server" Text='<%# Bind("Arrival") %>' />
+                            <asp:TextBox ID="DepartureTextBox" runat="server" Text='<%# Bind("Departure") %>' />
                         </td>
                         <td>
-                            <asp:TextBox ID="destinationTextBox" runat="server" Text='<%# Bind("destination") %>' />
+                            <asp:TextBox ID="DestinationTextBox" runat="server" Text='<%# Bind("Destination") %>' />
                         </td>
                         <td>
                             <asp:TextBox ID="PriceTextBox" runat="server" Text='<%# Bind("Price") %>' />
@@ -127,10 +127,10 @@
                             <asp:Label ID="PlaneNameLabel" runat="server" Text='<%# Eval("PlaneName") %>' />
                         </td>
                         <td>
-                            <asp:Label ID="ArrivalLabel" runat="server" Text='<%# Eval("Arrival") %>' />
+                            <asp:Label ID="DepartureLabel" runat="server" Text='<%# Eval("Departure") %>' />
                         </td>
                         <td>
-                            <asp:Label ID="destinationLabel" runat="server" Text='<%# Eval("destination") %>' />
+                            <asp:Label ID="DestinationLabel" runat="server" Text='<%# Eval("Destination") %>' />
                         </td>
                         <td>
                             <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
@@ -147,8 +147,8 @@
                                         <th runat="server">ID</th>
                                         <th runat="server">PlaneNo</th>
                                         <th runat="server">PlaneName</th>
-                                        <th runat="server">Arrival</th>
-                                        <th runat="server">destination</th>
+                                        <th runat="server">Departure</th>
+                                        <th runat="server">Destination</th>
                                         <th runat="server">Price</th>
                                     </tr>
                                     <tr id="itemPlaceholder" runat="server">
@@ -183,10 +183,10 @@
                             <asp:Label ID="PlaneNameLabel" runat="server" Text='<%# Eval("PlaneName") %>' />
                         </td>
                         <td>
-                            <asp:Label ID="ArrivalLabel" runat="server" Text='<%# Eval("Arrival") %>' />
+                            <asp:Label ID="DepartureLabel" runat="server" Text='<%# Eval("Departure") %>' />
                         </td>
                         <td>
-                            <asp:Label ID="destinationLabel" runat="server" Text='<%# Eval("destination") %>' />
+                            <asp:Label ID="DestinationLabel" runat="server" Text='<%# Eval("Destination") %>' />
                         </td>
                         <td>
                             <asp:Label ID="PriceLabel" runat="server" Text='<%# Eval("Price") %>' />
@@ -197,22 +197,22 @@
 
                
       
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DbAirlineConnectionString %>" DeleteCommand="DELETE FROM [tbPlane] WHERE [ID] = @ID" InsertCommand="INSERT INTO [tbPlane] ([PlaneNo], [PlaneName], [Arrival], [destination], [Price]) VALUES (@PlaneNo, @PlaneName, @Arrival, @destination, @Price)" SelectCommand="SELECT [ID], [PlaneNo], [PlaneName], [Arrival], [destination], [Price] FROM [tbPlane]" UpdateCommand="UPDATE [tbPlane] SET [PlaneNo] = @PlaneNo, [PlaneName] = @PlaneName, [Arrival] = @Arrival, [destination] = @destination, [Price] = @Price WHERE [ID] = @ID">
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:DbAirlineConnectionString %>" DeleteCommand="DELETE FROM [tbPlane] WHERE [ID] = @ID" InsertCommand="INSERT INTO [tbPlane] ([PlaneNo], [PlaneName], [Departure], [Destination], [Price]) VALUES (@PlaneNo, @PlaneName, @Departure, @Destination, @Price)" SelectCommand="SELECT [ID], [PlaneNo], [PlaneName], [Departure], [Destination], [Price] FROM [tbPlane]" UpdateCommand="UPDATE [tbPlane] SET [PlaneNo] = @PlaneNo, [PlaneName] = @PlaneName, [Departure] = @Departure, [Destination] = @Destination, [Price] = @Price WHERE [ID] = @ID">
                 <DeleteParameters>
                     <asp:Parameter Name="ID" Type="Int32" />
                 </DeleteParameters>
                 <InsertParameters>
                     <asp:Parameter Name="PlaneNo" Type="Int32" />
                     <asp:Parameter Name="PlaneName" Type="String" />
-                    <asp:Parameter Name="Arrival" Type="String" />
-                    <asp:Parameter Name="destination" Type="String" />
+                    <asp:Parameter Name="Departure" Type="String" />
+                    <asp:Parameter Name="Destination" Type="String" />
                     <asp:Parameter Name="Price" Type="Int32" />
                 </InsertParameters>
                 <UpdateParameters>
                     <asp:Parameter Name="PlaneNo" Type="Int32" />
                     <asp:Parameter Name="PlaneName" Type="String" />
-                    <asp:Parameter Name="Arrival" Type="String" />
-                    <asp:Parameter Name="destination" Type="String" />
+                    <asp:Parameter Name="Departure" Type="String" />
+                    <asp:Parameter Name="Destination" Type="String" />
                     <asp:Parameter Name="Price" Type="Int32" />
                     <asp:Parameter Name="ID" Type="Int32" />
                 </UpdateParameters>

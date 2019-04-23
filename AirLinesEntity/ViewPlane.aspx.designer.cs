@@ -22,22 +22,22 @@ namespace AirLinesEntity {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl rslt;
         
         /// <summary>
-        /// Depature control.
+        /// Departure control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Depature;
+        protected global::System.Web.UI.WebControls.TextBox Departure;
         
         /// <summary>
-        /// destination control.
+        /// Destination control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox destination;
+        protected global::System.Web.UI.WebControls.TextBox Destination;
         
         /// <summary>
         /// btnSubmit control.
